@@ -5,16 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Isabelle Frankel – Resume</title>
   <style>
+    /* Global Styles */
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+      background: #f4faff;
       color: #333;
     }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
     header {
-      background: #2c3e50;
+      background: linear-gradient(135deg, #0077cc, #004080);
       color: #fff;
       padding: 2rem 1rem;
       text-align: center;
@@ -25,51 +34,80 @@
     }
     header p {
       margin: 0.5rem 0 0;
-      font-size: 1.1rem;
     }
+
+    /* Navigation Bar */
+    nav {
+      background: #004080;
+      display: flex;
+      justify-content: center;
+      padding: 0.8rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* Main Container */
     main {
       max-width: 900px;
       margin: auto;
       padding: 2rem 1rem;
     }
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
     h2 {
-      border-bottom: 2px solid #2c3e50;
+      border-bottom: 3px solid #0077cc;
       padding-bottom: 0.3rem;
       margin-bottom: 1rem;
-      color: #2c3e50;
+      color: #004080;
     }
+
+    /* Job Cards */
     .job {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1rem;
       margin-bottom: 1.2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+    .job:hover {
+      transform: translateY(-3px);
     }
     .job h3 {
       margin: 0;
       font-size: 1.2rem;
+      color: #0077cc;
     }
     .job p {
-      margin: 0.2rem 0 0.5rem;
+      margin: 0.3rem 0 0.8rem;
       font-style: italic;
       color: #555;
     }
+
     ul {
       margin: 0;
       padding-left: 20px;
     }
+
+    /* Footer */
     footer {
-      background: #2c3e50;
+      background: #004080;
       color: #fff;
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
-    }
-    a {
-      color: #2980b9;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -79,17 +117,27 @@
     <p>845-729-6728 · <a href="mailto:imf65@miami.edu" style="color: #fff;">imf65@miami.edu</a></p>
     <p><a href="https://www.linkedin.com/in/isabelle-frankel/" style="color: #fff;">LinkedIn</a></p>
   </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#work">Work</a>
+    <a href="#volunteer">Volunteer</a>
+    <a href="#skills">Skills</a>
+    <a href="#activities">Activities</a>
+  </nav>
   
   <main>
-    <!-- About / Summary (pulled from LinkedIn) -->
-    <section>
+    <!-- About -->
+    <section id="about">
       <h2>About / Summary</h2>
-      <p><!-- Paste your LinkedIn “About” / summary text here. For example: -->
+      <p>
         I am currently a rising Senior at the University of Miami, pursuing a major in Health Science with a concentration in Health Management and Policy, with minors in Psychology and Public Health. My academic and career interests lie in the domains of healthcare ethics and policy, health focused consulting, health insurance within both public and private sectors, and the global management of healthcare systems. My ultimate goal is to leverage my education and professional experiences to drive positive change and innovation in healthcare management and policy, ultimately contributing to the betterment of healthcare systems worldwide.
       </p>
     </section>
 
-    <section>
+    <!-- Education -->
+    <section id="education">
       <h2>Education</h2>
       <p><strong>University of Miami</strong>, Coral Gables, FL<br>
         Bachelor of Science in Health Sciences – Health Management & Policy track, Minors in Public Health & Psychology<br>
@@ -101,7 +149,8 @@
       </ul>
     </section>
     
-    <section>
+    <!-- Work -->
+    <section id="work">
       <h2>Work Experience</h2>
       <div class="job">
         <h3>General Management Corporate Internship Program – CVS Health, Hartford, CT</h3>
@@ -149,7 +198,8 @@
       </div>
     </section>
     
-    <section>
+    <!-- Volunteer -->
+    <section id="volunteer">
       <h2>Volunteer Experience</h2>
       <ul>
         <li>Montefiore Hospital of Nyack</li>
@@ -159,7 +209,8 @@
       </ul>
     </section>
     
-    <section>
+    <!-- Skills -->
+    <section id="skills">
       <h2>Skills & Certifications</h2>
       <ul>
         <li>Languages: Conversational Spanish</li>
@@ -168,7 +219,8 @@
       </ul>
     </section>
     
-    <section>
+    <!-- Activities -->
+    <section id="activities">
       <h2>Activities & Involvement</h2>
       <ul>
         <li>Delta Phi Epsilon member</li>
